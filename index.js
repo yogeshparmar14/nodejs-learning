@@ -6,14 +6,17 @@ const router = require("./controller/routes.js");
 app.use(express.urlencoded({extended:true}));
 app.use("/statics",express.static(__dirname + "/statics"));
 
+app.set("view engines","ejs");
+app.set("views",__dirname + "/views");
+
 app.use("/accounts",router);
 
 app.use("/:name?",(req,res)=>{
    var name = req.params.name;
    if(name){
-   res.send(name);}
+   res.render("index.ejs");}
    else{
-       res.send("Empty !");
+    res.render("index.ejs");
    }
 });
 
