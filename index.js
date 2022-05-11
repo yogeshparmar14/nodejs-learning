@@ -16,7 +16,7 @@ app.use("/:name?",(req,res)=>{
    if(name){
    res.render("index.ejs",{name: name});}
    else{
-    res.render("index.ejs",{name: name});
+    res.render("index.ejs");
    }
 });
 
