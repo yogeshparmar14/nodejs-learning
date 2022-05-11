@@ -14,7 +14,7 @@ app.use("/accounts",router);
 app.use("/:name?",(req,res)=>{
    var name = req.params.name;
    if(name){
-   res.render("index.ejs");}
+   res.render("index.ejs",{name: name});}
    else{
     res.render("index.ejs");
    }
