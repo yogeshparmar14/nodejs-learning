@@ -8,9 +8,13 @@ app.use("/statics",express.static(__dirname + "/statics"));
 
 app.use("/accounts",router);
 
-app.use("/:name",(req,res)=>{
+app.use("/:name?",(req,res)=>{
    var name = req.params.name;
-   res.send(name);
+   if(name){
+   res.send(name);}
+   else{
+       res.send("Empty !");
+   }
 });
 
 const PORT = process.env.PORT || 3000;
