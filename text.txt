@@ -1,0 +1,14 @@
+git@github.com:diligentic/yogesh-training-projects.git
+
+echo "# yogesh-training-projects" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+rm -rf .git for delete git repository
+git branch -M main
+git remote add origin git@github.com:diligentic/yogesh-training-projects.git
+git push -u origin main
+
+git remote add origin git@github.com:diligentic/yogesh-training-projects.git
+git branch -M main
+git push -u origin main
