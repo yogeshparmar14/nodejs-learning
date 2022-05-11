@@ -1,12 +1,21 @@
 git@github.com:diligentic/yogesh-training-projects.git
 
 echo "# yogesh-training-projects" >> README.md
+git config --global user.name "yogesh parmar"
+git config --global user.email "mr.yoraj@gmail.com"
+$ touch .gitignore
+
+
 git init
-git add README.md
+git add .
 git commit -m "first commit"
+git status for just see
+git remote add origin git@github.com:diligentic/yogesh-training-projects.git
+git push origin master
+
 rm -rf .git for delete git repository
 git branch -M main
-git remote add origin git@github.com:diligentic/yogesh-training-projects.git
+
 git push -u origin main
 
 git remote add origin git@github.com:diligentic/yogesh-training-projects.git
